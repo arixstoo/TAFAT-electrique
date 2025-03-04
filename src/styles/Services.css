@@ -1,0 +1,35 @@
+/* src/styles/Services.css */
+.services-section {
+    background-color: #1a2433;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  #services-title {
+    color: #4fe0d0;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .services-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .services-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

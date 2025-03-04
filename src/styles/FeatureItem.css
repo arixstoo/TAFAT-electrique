@@ -1,0 +1,40 @@
+/* src/styles/FeatureItem.css */
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+  }
+  
+  .feature-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .feature-icon-container {
+    min-width: 50px;
+  }
+  
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+    color: #4fe0d0;
+  }
+  
+  .feature-content {
+    flex: 1;
+  }
+  
+  .feature-title {
+    color: #4fe0d0;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .feature-description {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.4;
+  }

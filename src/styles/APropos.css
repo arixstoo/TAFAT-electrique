@@ -1,0 +1,101 @@
+/* Styles pour la section À Propos */
+.a-propos-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .a-propos-container h1 {
+    text-align: center;
+    color: #0B3D91;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  /* Styles pour les sections accordéon */
+  .accordion-section {
+    background-color: #1E2A38;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+  
+  .accordion-header {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-header:hover {
+    background-color: #2a3a4c;
+  }
+  
+  .accordion-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .accordion-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+  }
+  
+  .accordion-content.active {
+    height: auto;
+  }
+  
+  .content-inner {
+    padding: 16px 20px 20px 20px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .accordion-content.active .content-inner {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Styles pour les éléments de contenu */
+  .highlight {
+    color: #4ECDC4;
+    font-weight: bold;
+  }
+  
+  /* Style pour le bouton de fermeture/ouverture */
+  .toggle-btn {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    transition: transform 0.8s ease;
+  }
+  
+  .toggle-btn:before, .toggle-btn:after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    transition: transform 0.8s ease;
+  }
+  
+  .toggle-btn:before {
+    width: 24px;
+    height: 2px;
+    top: 11px;
+    left: 0;
+  }
+  
+  .toggle-btn:after {
+    width: 2px;
+    height: 24px;
+    top: 0;
+    left: 11px;
+  }
+  
+  .accordion-header.active .toggle-btn:after {
+    transform: rotate(90deg);
+  }

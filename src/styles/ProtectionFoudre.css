@@ -1,0 +1,16 @@
+/* Styles pour la section Protection contre la foudre */
+.protection-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .protection-container h1 {
+    text-align: center;
+    color: #0B3D91;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  /* Les styles d'accordéon sont partagés entre les composants,
+     mais vous pouvez également les importer d'un fichier commun si vous préférez */
